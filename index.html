@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Operators </title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css";; rel="stylesheet">
+
+	<style>
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		div {
+			margin: auto;
+			width: 50%;
+			border: 3px solid slateblue;
+			padding: 10px;
+			text-align: center;
+		}
+
+		h1 {
+			font: sans-serif;
+			font-weight: 5px;
+			text-align: center;
+			color: white;
+		}
+
+		body {
+			color: black;
+			background: lightblue;
+		}
+	</style>
+</head>
+<body>
+
+<div>
+<h1> Arithmetic Operator</h1>
+
+<div>
+	<div class="container">
+
+		<script>
+			var a, b, MulResult;
+			a = 20;
+			b = 5;
+			MulResult = a*b;
+			document.write ("<h4> Click button for the answer of when a = 20 and b = 5 in Multiplication </h4>")
+		</script>
+
+	<p id="Answer1"> </p>
+
+	<button type="button" onclick="document.getElementById('Answer1').innerHTML = 'Multiplication:' + MulResult;"> Show Answer </button>
+	</div>
+
+	<div class="container">
+		<script>
+			var a, b, ModResult;
+			a = 20;
+			b = 5;
+			ModResult = a & b;
+
+			document.write ("<h4> Click button for the answer of when a = 20 and b = 5 in Modulus </h4>")
+		</script>
+
+	<p id="Answer2"> </p>
+	<button type="button" onclick="document.getElementById('Answer2').innerHTML = 'Modulus:' + ModResult;"> Show Answer </button>
+	</div>
+</div>
+</div>
+
+<br>
+
+<div>
+<h1> Comparison Operator</h1>
+
+<div>
+	<div class="container">
+
+		<script>
+			var a, b, EqlvResult;
+			a = 20;
+			document.getElementById("Eqlv").innerHTML = (a === 20)
+
+			document.write ("<h4> Click button for the answer of when a = 20 and b = 5 in Eqaul To Value </h4>")
+		</script>
+
+	<p id="Answer4"> </p>
+	<button type="button" onclick="document.getElementById('Answer4').innerHTML = 'EqualV:' + EqlvResult;"> Show Answer </button>
+	</div>
+
+	<div class="container">
+		<script>
+			var a, b, EqlResult;
+			a = 20;
+			document.getElementById("Eql").innerHTML = (a == 5)
+
+			document.write ("<h4> Click button for the answer of when a = 20 and b = 5 in Eqaul To </h4>")
+		</script>
+
+	<p id="Answer4"> </p>
+	<button type="button" onclick="document.getElementById('Answer4').innerHTML = 'Equal:' + EqlResult;"> Show Answer </button>
+	</div>
+</div>
+</div>
+<br>
+
+<div>
+<h1> Logical Operator</h1>
+
+<div>
+	<div class="container">
+
+		<script>
+			var a, b, AndResult;
+			a = 20;
+			b = 5;
+
+			document.getElementById("And").innerHTML = 
+			(a < 5 && b > 18)
+			(a < 5 && b < 18)
+			document.write ("<h4> Click button for the answer of when a = 20 and b = 5 in Multiplication </h4>")
+		</script>
+
+	<p id="Answer5"> </p>
+
+	<button type="button" onclick="document.getElementById('Answer5').innerHTML = 'AndResult:' + AndResult;"> Show Answer </button>
+	</div>
+
+	<div class="container">
+		<script>
+			var a, b, OrResult;
+			a = 20;
+			b = 5;
+		document.getElementById("OrResult").innerHTML = 
+		(a == 150 || b == 20) + "<br>" + 
+		(a == 20 || b == 0) + "<br>" + 
+		(a == 0 || b == 5) + "<br>" + 
+		(a == 5 || b == 20);
+			document.write ("<h4> Click button for the answer of when a = 20 and b = 5 in Modulus </h4>")
+		</script>
+
+	<p id="Answer6"> </p>
+	<button type="button" onclick="document.getElementById('Answer6').innerHTML = 'Modulus:' + ModResult;"> Show Answer </button>
+	</div>
+</div>
+</div>
+
+</body>
+</html>
